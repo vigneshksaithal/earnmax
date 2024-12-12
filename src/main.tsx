@@ -16,7 +16,7 @@ Devvit.addMenuItem({
 
     const subreddit = await reddit.getCurrentSubreddit();
     const post = await reddit.submitPost({
-      title: 'My devvit ',
+      title: 'Earn Max',
       subredditName: subreddit.name,
       // The preview appears while the post loads
       preview: (
@@ -38,11 +38,12 @@ Devvit.addCustomPostType({
 
     return (
       <vstack height="100%" width="100%" gap="medium" alignment="center middle">
-        <text size="xxlarge">Choose best</text>
+        <text size="xxlarge">Choose the better option</text>
         <text size="large">{`Your earnings: $${counter}`}</text>
         <spacer size='medium'></spacer>
         <hstack>
           <button size='large' appearance="primary" onPress={() => setCounter((counter) => counter + 1)}>
+            +$20
             +$20
           </button>
           <spacer size='medium'></spacer>
