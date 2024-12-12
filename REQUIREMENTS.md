@@ -1,25 +1,55 @@
-# Requirements
-This is a game where you need to choose the better option which gives you more money.
+# Money Master Game
+
+A dynamic game where players need to choose the better monetary option to maximize their earnings.
 
 ## Technical Details
-- This game is developed for and using Reddit's Devvit platform.
-- It uses Devvit interactive posts API.
-- It uses Devvit redis database API.
-- It uses Devvit UI API.
+
+- Developed for Reddit's Devvit platform
+- Uses Devvit interactive posts API
+- Uses Devvit Redis database for persistent storage
+- Uses Devvit UI API for rich interface elements
 
 ## Features
-- It's a game where you need to choose the better option which gives you more money.
-- You can choose between two options.
-- The currency will be in USD.
-- Create an algoithm that will generate the options for the buttons.
-- Also save the earnings in Devvit redis database.
+
+### Core Gameplay
+- Dynamic option generation with random monetary values
+- Choice between dollar and cent amounts
+- Real-time earnings tracking
+- Streak system for consecutive correct choices
+- High score persistence across sessions
+
+## How the game works
+- The player chooses an option
+- There should be a message displayed which shows if its correct or wrong
+- And the amount the user chose should be saved and added and shown in earnings
+- There should be 10 rounds per session
+
+### Technical Features
+- Redis integration for score persistence
+- Dynamic UI updates
+- Toast notifications for feedback
+- Responsive layout
+- Error handling
+
+### Game Mechanics
+- Random amount generation within balanced ranges
+- Variance calculation to ensure fair choices
+- Streak bonus system
+- High score tracking
+- Visual feedback for choices
+
+### UI/UX Features
+- Clean, intuitive interface
+- Clear value presentation
+- Game status indicators
+- Helpful tooltips
+- Visual feedback for actions
 
 ## References
-- https://developers.reddit.com/docs/blocks/overview
-- https://developers.reddit.com/docs/blocks/stacks
-- https://developers.reddit.com/docs/blocks/text
-- https://developers.reddit.com/docs/blocks/icon
-- https://developers.reddit.com/docs/blocks/button
-- https://developers.reddit.com/docs/blocks/image
-- https://developers.reddit.com/docs/blocks/spacer
-- https://developers.reddit.com/docs/blocks/colors
+
+- [Devvit Blocks Overview](https://developers.reddit.com/docs/blocks/overview)
+- [Devvit Stacks Documentation](https://developers.reddit.com/docs/blocks/stacks)
+- [Devvit Text Components](https://developers.reddit.com/docs/blocks/text)
+- [Devvit Button Components](https://developers.reddit.com/docs/blocks/button)
+- [Devvit Spacer Components](https://developers.reddit.com/docs/blocks/spacer)
+- [Devvit Color System](https://developers.reddit.com/docs/blocks/colors)
